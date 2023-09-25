@@ -9,8 +9,8 @@
 列表（List）：用于存储购物车中的多个商品信息。每个商品信息可以用一个字典或者元组表示，包含商品ID、商品名、商品型号、价格、数量、折扣等属性。例如：
 
 cart = [
-    {"id": 123456, "name": "苹果手机", "model": "iPhone 1"5, "price": 6999.99, "quantity": 2, "discount": 0.2},
-    {"id": 654321, "name": "华为手机", "model": "Mate 40", "price": 5999.99, "quantity": 1, "discount": 0.1}
+    {"id": 123456, "name": "苹果手机", "model": "iPhone 15", "price": 6999.99, "quantity": 1, "discount": 0.2},
+    {"id": 654321, "name": "华为手机", "model": "Mate 40", "price": 5999.99, "quantity": 2, "discount": 0.1}
 ]
 字典（Dictionary）：用于存储单个商品的详细信息。键值对表示不同的属性，如商品ID、商品名、商品型号、价格、数量、折扣等。例如：
 
@@ -19,7 +19,7 @@ product = {
     "name": "苹果手机",
     "model": "iPhone 15",
     "price": 6999.99,
-    "quantity": 2,
+    "quantity": 1,
     "discount": 0.2
 }
 布尔值（Boolean）：用于表示购物车是否为空，即是否有商品加入。例如：有商品加入购物车，布尔值为True；购物车为空，布尔值为False。
