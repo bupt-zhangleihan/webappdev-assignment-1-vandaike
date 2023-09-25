@@ -1,0 +1,28 @@
+//1.计算三角形面积的函数：
+function calculateTriangleArea(base, height) {
+  var area = 0.5 * base * height;
+  return area;
+}
+//这个函数接受两个参数base和height，分别表示三角形的底边长和高。它通过计算底边长和高的乘积的一半得到三角形的面积，并将结果返回。
+
+//2.打印给定两个数值之间所有素数的函数：
+function printPrimeNumbers(start, end = 100) {
+  for (var i = start; i <= end; i++) {
+    if (isPrime(i)) {
+      console.log(i);
+    }
+  }
+}
+
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (var i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+//这个函数接受两个参数start和end，分别表示开始和结束的范围。默认情况下，end的值为100。它会遍历指定范围内的所有数字，并通过调用isPrime函数判断每个数字是否为素数。如果是素数，则在控制台打印出来。
