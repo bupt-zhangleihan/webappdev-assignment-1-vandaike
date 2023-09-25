@@ -1,0 +1,27 @@
+for (let i = 0; i < allStudents.length; i++) {
+  //循环遍历每一个学生成绩
+  let score = allStudents[i];
+  
+  // 第一种评分系统：分数范围是1-5，3及以上代表合格
+  if (typeof score === 'number' && score >= 3 && score <= 5) {
+    studentsWhoPass.push(score);
+  }
+  
+  // 第二种评分系统：根据分数对应的等级判断合格
+  if (typeof score === 'string') {
+    switch (score) {
+      case 'A':
+      case 'A-':
+      case 'B':
+      case 'B-':
+      case 'C':
+      case 'C-':
+        studentsWhoPass.push(score);
+        break;
+      default:
+        break;
+    }
+  }
+}
+
+console.log(studentsWhoPass);
